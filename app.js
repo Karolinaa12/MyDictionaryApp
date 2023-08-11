@@ -3,7 +3,8 @@ const searchBtn = document.querySelector("#searchBtn");
 const result = document.querySelector(".result");
 const header = document.querySelector(".header");
 
-searchBtn.addEventListener("click", () => {
+searchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   let inputWord = document.querySelector("#userInput").value;
   fetch(`${url}${inputWord}`)
     .then((response) => response.json())
@@ -31,5 +32,6 @@ searchBtn.addEventListener("click", () => {
         </p>
         <br />`;
       }
+      document.querySelector("#userInput").value = "";
     });
 });

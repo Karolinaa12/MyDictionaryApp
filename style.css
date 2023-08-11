@@ -12,16 +12,22 @@ body {
   /* font-family: "Mukta", sans-serif; */
 }
 
+div.wrapper {
+  width: 90vmin;
+  margin: 3rem auto 1rem;
+  padding: 4rem 3rem;
+  border: none;
+}
+
 input[type="text"] {
   outline: none;
   border: none;
   border-bottom: 0.05rem solid #000;
-
   font-family: "Mukta", sans-serif;
   font-size: 1.2rem;
 }
 
-input[type="button"] {
+input[type="submit"] {
   border-radius: 0.3rem;
   border: none;
 
