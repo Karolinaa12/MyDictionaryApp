@@ -4,7 +4,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
@@ -12,9 +11,12 @@ body {
   /* font-family: "Mukta", sans-serif; */
 }
 
+div.container {
+  width: 50%;
+}
+
 div.wrapper {
-  width: 90vmin;
-  margin: 3rem auto 1rem;
+  margin: 10rem auto 1rem;
   padding: 4rem 3rem;
   border: none;
 }
@@ -22,28 +24,31 @@ div.wrapper {
 input[type="text"] {
   outline: none;
   border: none;
-  border-bottom: 0.05rem solid #000;
+  border-bottom: 0.1rem solid #000;
   font-family: "Mukta", sans-serif;
   font-size: 1.2rem;
+  width: 90%;
+  padding: 0;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   border-radius: 0.3rem;
   border: none;
-
   outline: none;
-  padding: 0.2rem 1.5rem;
-  color: #fff;
-  background-color: #000;
-  font-family: "Mukta", sans-serif;
-  font-size: 1.2rem;
-}
-
-input[type="button"]:hover {
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
   color: #000;
   background-color: #fff;
+  font-family: "Mukta", sans-serif;
+  font-size: 1.2rem;
+  width: 5%;
+  padding: 0;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  color: #fff;
+  background-color: #000;
 }
 form {
   margin: 5rem 0;

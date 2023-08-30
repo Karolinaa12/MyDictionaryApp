@@ -4,22 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Dictionary</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script src="https://kit.fontawesome.com/6821d79269.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <div class="wrapper">
         <audio id="sound"></audio>
-        <form id="searchForm">
-          <input type="text" id="userInput" placeholder="Type your word" />
-          <input type="submit" id="searchBtn" value="Search" />
+          <input type="text" id="userInput" placeholder="Type your word..." />
+          <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <div class="result" id="searchResult"></div>
       </div>
